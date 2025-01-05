@@ -6,15 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
     <script type="module">
-        // Import the functions you need from the SDKs you need
         import { getFirestore, collection, doc, addDoc } from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js'
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
         import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         const firebaseConfig = {
             apiKey: "AIzaSyDN05la6BOSSNfIWdcuuXVIBN6a75dt9s4",
             authDomain: "krv-store.firebaseapp.com",
@@ -25,7 +19,6 @@
             measurementId: "G-DXCX2DNXJ1"
         };
 
-        // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
         const firestore = getFirestore(app);
@@ -74,7 +67,6 @@
             text-align: center;
             flex-grow: 1;
             margin-bottom: 100px;
-            /* Push content to the center of the page */
         }
 
         h1 {
@@ -94,7 +86,6 @@
             font-size: 16px;
             margin-right: 10px;
             width: 200px;
-            /* Reduce the width of the input box */
             border: none;
             outline: none;
         }
@@ -107,7 +98,6 @@
             border: none;
             cursor: pointer;
             width: 90px;
-            /* Set a fixed width for the button */
         }
 
         button:hover {
@@ -124,7 +114,6 @@
     <img id="logo" src="Asset 1.svg" alt="Brand Logo" style="width: 100px; height: auto;" />
     <div class="content">
         <h1>STAY UPDATED</h1>
-        <!-- <p>Enter your email to get notified when our store launches:</p> -->
         <form onsubmit="submitEmail(); return false;">
             <div class="input-container">
                 <input type="email" id="email" placeholder="Enter your email" required />
